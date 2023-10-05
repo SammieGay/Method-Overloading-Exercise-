@@ -21,16 +21,7 @@
             {
                 sum = a + b;
 
-                //if (sum == 1 || sum == -1)
-                //{
-                    //response = $"{sum} dollar.";
-                //}
-                //else
-                //{
-                    //response = $"{sum} dollars.";
-
-                //}
-                 response = (sum == 1 || sum == -1) ? $"{sum} dollar." : $"{sum} dollars.";
+                response = (sum == 1 || sum == -1) ? $"{sum} dollar." : $"{sum} dollars.";
                 
             }
             return response;
@@ -38,6 +29,14 @@
 
         static void Main(string[] args)
         {
+            Console.WriteLine(Add(5, 6));
+
+            Console.WriteLine();
+
+            Console.WriteLine(Add(43.007m, 3.89m));
+
+            Console.WriteLine();
+
             Console.WriteLine(Add(4, -3, true));
 
             Console.WriteLine();
